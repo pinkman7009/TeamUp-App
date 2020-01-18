@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member_list"
+
+    android:orientation="vertical"
+    android:background="#000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Members List"
+        android:paddingTop="25dp"
+        android:background="@drawable/takeattenbutton"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_members_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

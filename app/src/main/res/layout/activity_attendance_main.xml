@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/teamlogo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="115dp"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="17dp"
+
+            android:background="@drawable/srmthsign" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATTENDANCE MANAGER"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whiterect"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/paytone_one"
+                android:layout_marginTop="100dp"
+                android:text="Take Attendance"
+                android:background="@drawable/takeattenbutton"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:paddingBottom="10dp"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/pinkbg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:layout_marginTop="20dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffff"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <SearchView
+                        android:id="@+id/search_bar"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:queryHint="Search Here"
+                        android:background="@drawable/edit_round"
+                        android:iconifiedByDefault="false"
+                        />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_name"
+                        android:layout_width="273dp"
+                        android:layout_height="98dp"
+                        android:layout_below="@id/search_bar"
+                        android:layout_marginTop="2dp"
+                        android:foregroundTint="#FFFFFF" />
+
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_student_name"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:hint="Name "
+                    android:visibility="gone"
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:text="From : "
+                    android:textSize="24sp"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btn_date_picker_from"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_grid_on_black_24dp"
+                    android:text="Pick a Date"
+                    android:textSize="8sp"
+                    android:background="@drawable/edit_round"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="2dp"/>
+                <EditText
+                    android:id="@+id/edt_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="DD-MM-YYYY"
+                    android:textColorHint="#ffff"
+                    android:textColor="#ffff"
+                    android:inputType="date"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="To : "
+                    android:textSize="24sp"
+                    android:layout_weight="2"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btn_date_picker_to"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_grid_on_black_24dp"
+                    android:text="Pick a Date"
+                    android:textSize="8sp"
+                    android:background="@drawable/edit_round"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="2dp"/>
+                <EditText
+                    android:id="@+id/edt_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="date"
+                    android:hint="DD-MM-YYYY"
+                    android:textColorHint="#ffff"
+                    android:textColor="#ffff"
+                    />
+
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Track"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:background="@drawable/custombtn2"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/devby"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+

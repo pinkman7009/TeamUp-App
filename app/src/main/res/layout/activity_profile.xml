@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@drawable/profilepagebackg"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/settings"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/attendance_btn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/testbutton"
+            android:layout_marginTop="100dp"
+            android:text="Track Attendance"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            />
+
+        <Button
+            android:id="@+id/teamlistbtn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="40dp"
+            android:background="@drawable/testbutton"
+            android:text="ADD MEMBERS"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/eventsbtn"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/testbutton"
+            android:text="EVENTS PAGE"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_members_list"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/testbutton"
+            android:text="TEAMLIST"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

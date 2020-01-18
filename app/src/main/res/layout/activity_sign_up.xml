@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000000"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Register for app"
+
+        android:textColor="#fefdfd"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/teamlogo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="115dp"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="17dp"
+
+            android:background="@drawable/srmthsign" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="350dp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:textColor="#ffff"
+            android:hint="Enter email"
+            android:textColorHint="#ffff"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/buttonsignup"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textColor="#0271d0"
+            android:background="#ffff"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:layout_marginTop="10dp"
+            android:text="or"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/openlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/devby"/>
+
+    </LinearLayout>
+</LinearLayout>

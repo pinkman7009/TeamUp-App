@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/bungee_shade</item>
+        <item>@font/droid_sans_bold</item>
+        <item>@font/luckiest_guy</item>
+        <item>@font/mclaren</item>
+        <item>@font/paytone_one</item>
+        <item>@font/righteous</item>
+    </array>
+</resources>

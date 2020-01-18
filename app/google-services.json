@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "135801941545",
+    "firebase_url": "https://teamtrackingapptest2.firebaseio.com",
+    "project_id": "teamtrackingapptest2",
+    "storage_bucket": "teamtrackingapptest2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135801941545:android:989665cfd7a7d63bfff638",
+        "android_client_info": {
+          "package_name": "com.example.teamtrackingapptest2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135801941545-ud9b37k76onj1erkooei7be69k8it3k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teamtrackingapptest2",
+            "certificate_hash": "6f1e04b54e535b79cafbef837a3333cd016d7ea8"
+          }
+        },
+        {
+          "client_id": "135801941545-lhi6tcpehv80i5dl0a8rg7qcv888p9t7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teamtrackingapptest2",
+            "certificate_hash": "9ad106081a9a6055262a6f6b745bdd6e4f424eae"
+          }
+        },
+        {
+          "client_id": "135801941545-2jaoee50m2vqc407i64547ohbp1hhuh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7SiF5jELM0AjLWHokkjSnQl16ITXTDSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135801941545-2jaoee50m2vqc407i64547ohbp1hhuh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
