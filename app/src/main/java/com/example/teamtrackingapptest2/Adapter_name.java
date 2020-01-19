@@ -1,6 +1,9 @@
 package com.example.teamtrackingapptest2;
 
 import android.content.Context;
+import android.os.Build;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,15 +20,17 @@ import java.util.ArrayList;
 
 public class Adapter_name extends RecyclerView.Adapter<Adapter_name.ViewHolder> implements Filterable {
        private Context context;
+       Vibrator vibrator;
        private ArrayList<Student> students;
        private ArrayList<Student> studentsfull;
        public String studentName;
        public TextView textView;
        public SearchView searchView;
 
-       public Adapter_name(Context context, ArrayList<Student> students, TextView textView, SearchView searchView) {
+       public Adapter_name(Context context, ArrayList<Student> students, TextView textView, SearchView searchView, Vibrator vibrator) {
            this.context = context;
            this.students = students;
+           this.vibrator=vibrator;
            this.searchView=searchView;
            studentsfull=new ArrayList<>(students);
            studentName="";
@@ -53,6 +58,14 @@ public class Adapter_name extends RecyclerView.Adapter<Adapter_name.ViewHolder> 
                    searchView.setQuery(studentName,false);
                    searchView.clearFocus();
                    textView.setText(studentName);
+                   if(Build.VERSION.SDK_INT>=26)
+                   {
+                       vibrator.vibrate(VibrationEffect.createOneShot(50,30));
+                   }
+                   else
+                   {
+                       vibrator.vibrate(50);
+                   }
 
                }
            });

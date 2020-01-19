@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +40,7 @@ public class attendance_main extends AppCompatActivity {
     private Spinner domain;
     private Button add;
     private SearchView searchView;
+    public Vibrator vibrator;
 
     TextView tv1;
     RecyclerView rv1;
@@ -62,6 +64,7 @@ public class attendance_main extends AppCompatActivity {
         edt_from=findViewById(R.id.edt_from);
         edt_to=findViewById(R.id.edt_to);
         date_picker_from=findViewById(R.id.btn_date_picker_from);
+        vibrator=(Vibrator) getSystemService(VIBRATOR_SERVICE);
         date_picker_to=findViewById(R.id.btn_date_picker_to);
         date_picker_from.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +121,7 @@ public class attendance_main extends AppCompatActivity {
                     Student s=dataSnapshot1.getValue(Student.class);
                     list.add(s);
                 }
-                adapter= new Adapter_name(attendance_main.this,list,tv1,searchView);
+                adapter= new Adapter_name(attendance_main.this,list,tv1,searchView,vibrator);
                 rv1.setAdapter(adapter);
 
             }
